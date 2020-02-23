@@ -8,7 +8,7 @@ import './Salong.css';
 class Salong extends React.Component {
 
     state = {
-        
+        // Samla information från salongen här
 
     }
 
@@ -25,6 +25,11 @@ class Salong extends React.Component {
     
     
     //  gör en css-fil där backgrundsbilden för div-en är 
+
+    onClickHandle = () =>{
+        this.props.history.push('/');
+    }
+
     
 
     render (){
@@ -34,46 +39,31 @@ class Salong extends React.Component {
 
                 <div className="container">
                     <img src={this.props.location.state.image} ></img>
-                    <button className="btn">Back</button>
+                    <button>Info</button><button>Schema</button>
+                    <button onClick={this.onClickHandle}>Back</button>
+
+                    <div>{this.props.location.state.address}</div>
+                    
+
+                    <div>Öppet till 19:00 idag</div>
+
+                    <div>08-522 382 20</div>
+
+                    <div>www.salongweb.se</div>
+
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Maecenas fringilla, orci non lacinia finibus, arcu lacus
+                        commodo justo, et malesuada est nisl fermentum risus.
+                        Integer luctus nisl turpis, quis imperdiet enim auctor
+                        id. Nunc posuere purus mauris, vitae molestie arcu 
+                        ultricies pulvinar. Orci varius natoque penatibus et
+                            magnis dis parturient montes, nascetur ridiculus mus.
+                    </div>
                 </div>
 
 
-                {/**
-                <div className="container">
-                    <img src={this.props.location.state.image} ></img>
-                    <button className="btn">Back</button>
-                </div>
-
+              
                 
-                 * <image>
-                    <button>Back</button>
-                    <image>backgrundsbild, sätt denna till hela diven ist</image>
-                    {props.title}
-
-                </image>
-                */}
-                
-                
-
-                <button>Info</button><button>Schema</button>
-
-                <div><p>{this.props.location.state.address}</p></div>
-                
-
-                <div><p>Öppet till 19:00 idag</p></div>
-
-                <div><p>08-522 382 20</p></div>
-
-                <div><p>www.salongweb.se</p></div>
-
-                <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Maecenas fringilla, orci non lacinia finibus, arcu lacus
-                    commodo justo, et malesuada est nisl fermentum risus.
-                    Integer luctus nisl turpis, quis imperdiet enim auctor
-                    id. Nunc posuere purus mauris, vitae molestie arcu 
-                    ultricies pulvinar. Orci varius natoque penatibus et
-                        magnis dis parturient montes, nascetur ridiculus mus.</p>
-                </div>
 
             
 

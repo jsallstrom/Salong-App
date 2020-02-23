@@ -74,9 +74,9 @@ class SalongListComponent extends React.Component {
                     return salong.price <= this.state.topPrice && salong.price >= this.state.lowestPrice;
                 })
                       
-                .map((salong) => {
+                .map((salong, index) => {
 
-                    return <SalongListItem key={salong} title={salong.title} price={salong.price}></SalongListItem>
+                    return <SalongListItem key={index} title={salong.title} price={salong.price}></SalongListItem>
                 })             
                 }
             </div>

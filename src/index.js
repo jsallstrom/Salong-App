@@ -9,10 +9,10 @@ import TestCssGrid from './components/testCssGrid'
 
 
 // Origin
-// ReactDOM.render(<App />, document.getElementById('root'));
+ ReactDOM.render(<App />, document.getElementById('root'));
 
 
-ReactDOM.render(<TestCssGrid />, document.getElementById('root'));
+// ReactDOM.render(<TestCssGrid />, document.getElementById('root'));
 
 
 
