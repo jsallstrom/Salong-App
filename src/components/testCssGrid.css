@@ -1,0 +1,103 @@
+
+
+
+/*
+    Quick guide for CSS-grid, there are two things to keep track of when it comes to grid:
+    1) Container
+    2) Items in that container
+
+
+
+    with "grid-template-columns" we define the width of the app 
+    (we can define changes with medoia queries later for when it gets biggeer)
+
+
+
+
+*/
+.Lista {
+
+    width: 375px;
+  
+    height: 667px;
+  
+    background-color: #ffffff;
+  
+  }
+
+
+  .Bar {
+
+    width: 375px;
+  
+    height: 64px;
+  
+    -webkit-backdrop-filter: blur(10px);
+  
+    backdrop-filter: blur(10px);
+  
+    background-color: rgba(255, 255, 255, 0.9);
+  
+  }
+
+  .Pris {
+
+    width: 109px;
+  
+    height: 18px;
+  
+    font-family: HelveticaNeue;
+  
+    font-size: 15px;
+  
+    font-weight: 300;
+  
+    font-stretch: normal;
+  
+    font-style: normal;
+  
+    line-height: normal;
+  
+    letter-spacing: normal;
+  
+    text-align: left;
+  
+    color: #202020;
+  
+  }
+
+  .Path-2-Copy-4 {
+
+    width: 5.7px;
+  
+    height: 10.9px;
+  
+    object-fit: contain;
+  
+    transform: rotate(90deg);
+  
+    border: solid 1px #b69f58;
+  
+  }
+
+
+
+  .Rectangle-19 {
+
+    width: 375px;
+  
+    height: 50px;
+  
+    background-color: #ffffff;
+  
+  }
+
+
+.item {
+
+
+
+
+}
+
+
