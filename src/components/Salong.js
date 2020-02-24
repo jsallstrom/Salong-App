@@ -1,8 +1,7 @@
 import React from 'react';
 import './Salong.css';
 
-
-
+import arrow from '../img/arrow.png';
 
 
 class Salong extends React.Component {
@@ -17,14 +16,16 @@ class Salong extends React.Component {
 
     }
 
-    // picture 
-    // backwards button top left (do with History with React Router)
-    // 
+    
 
-    // gör det enkelt från början och skriv bara ut all information rakt upp och ner
-    
-    
-    //  gör en css-fil där backgrundsbilden för div-en är 
+    // importera alla knappar och se till att de funkar (ej svg)
+    // gör ett eget försökja att skapa en liten .box
+    // med tre olika boxar i sig och olika columner
+    // med grid kanske jag kan ha typ 5 columner
+    // 3 rader och sen göra så att mellan column 4/5 på rad 1 så är arrow eller stuff
+
+
+
 
     onClickHandle = () =>{
         this.props.history.push('/');
@@ -38,7 +39,14 @@ class Salong extends React.Component {
 
 
                 <div className="container">
-                    <img src={this.props.location.state.image} ></img>
+
+                    <div >
+                        <img className="Image" src={this.props.location.state.image} ></img>
+                        <img className="Arrow" src={arrow}></img>
+                    </div>
+
+
+                    
                     <button>Info</button><button>Schema</button>
                     <button onClick={this.onClickHandle}>Back</button>
 

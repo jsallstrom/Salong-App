@@ -2,102 +2,193 @@
 
 
 /*
-    Quick guide for CSS-grid, there are two things to keep track of when it comes to grid:
-    1) Container
-    2) Items in that container
+    
+    Quick guide for Flex box,
 
-
-
-    with "grid-template-columns" we define the width of the app 
-    (we can define changes with medoia queries later for when it gets biggeer)
-
-
+    only do flexbox on the boxes and containers you are gonna use, you dont
+    need to use it on text and stuff
 
 
 */
-.Lista {
 
+
+
+
+
+
+/* Background could maybe be changed to imported image */
+body{
+    background: #FBFBFB
+}
+
+.wrapper{
+    margin:0;
+    padding:0;
+    display:flex;
+    
+    flex-wrap:wrap;
+
+    
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
     width: 375px;
-  
-    height: 667px;
-  
-    background-color: #ffffff;
-  
-  }
+    height: 106px;
+    border: solid 0.5px #eeeeee;
+    
+}
 
 
-  .Bar {
-
-    width: 375px;
-  
-    height: 64px;
-  
-    -webkit-backdrop-filter: blur(10px);
-  
-    backdrop-filter: blur(10px);
-  
-    background-color: rgba(255, 255, 255, 0.9);
-  
-  }
-
-  .Pris {
-
-    width: 109px;
-  
-    height: 18px;
-  
-    font-family: HelveticaNeue;
-  
-    font-size: 15px;
-  
-    font-weight: 300;
-  
-    font-stretch: normal;
-  
-    font-style: normal;
-  
-    line-height: normal;
-  
-    letter-spacing: normal;
-  
-    text-align: left;
-  
-    color: #202020;
-  
-  }
-
-  .Path-2-Copy-4 {
-
-    width: 5.7px;
-  
-    height: 10.9px;
-  
-    object-fit: contain;
-  
-    transform: rotate(90deg);
-  
-    border: solid 1px #b69f58;
-  
-  }
-
-
-
-  .Rectangle-19 {
-
-    width: 375px;
-  
-    height: 50px;
-  
-    background-color: #ffffff;
-  
-  }
-
-
-.item {
-
-
+.box1{
+    display: flex;
+    flex-direction: column;
+    
+    width: 85px;
 
 
 }
 
 
+.box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 106px;
+
+
+}
+
+.box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100px;
+
+
+}
+
+
+.box4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40px;
+
+
+}
+
+
+
+
+/* Now for the text and stuff inside*/
+
+
+
+.time-text-1{
+    
+    width: 38px;
+    height: 17px;  
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #202020;
+
+}
+
+
+.title{
+     
+    
+    font-family: MillerBanner;
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #202020;
+
+}
+
+.rating{
+    
+    
+    font-family: HelveticaNeue;
+
+    font-size: 11px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.07px;
+    color: #656565;
+}
+
+.address{
+    
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666666;
+}
+
+
+.price{
+    
+    
+    width: 42px;
+    height: 17px;
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #202020;
+}
+
+.time-text-2{
+    
+    width: 39px;
+    height: 16px;
+    font-family: HelveticaNeue;
+    font-size: 13px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #656565;
+
+}
+
+
+
+
+.arrow {
+
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    color: #b69f58;
+    transform: rotate(180deg);
+  
+  }

@@ -33,18 +33,36 @@ class SalongListComponent extends React.Component {
           }], 
      
 
-        priceRange : ['Pris 1', 'Pris 2', 'Pris 3'],
-        salongListPicture : 'linkToPicture',
-        topPrice : 1000,
-        lowestPrice: 0, 
+        priceRanges : [{priceRange: 'Pris 0 - 250 kr', lowPrice: 0, topPrice: 250},
+                        {priceRange: 'Pris 250 - 500 kr', lowPrice: 250, topPrice: 500},
+                        {priceRange: 'Pris 500 - 750 kr', lowPrice: 500, topPrice: 750},
+                        {priceRange: 'Pris 750 - 1000 kr', lowPrice: 750, topPrice: 1000},
+                    ],
+        selectedPriceRange: {priceRange: 'Pris 0 - 250 kr', lowPrice: 0, topPrice: 250}, 
+        
+       
 
         // when filtering if topPrice is undefined then all are shown
 
     }
 
 
+
+
     constructor(props) {
         super(props);
+    }
+
+    onChangeHandler = (e) => {
+
+       
+        const index = e.target.value;
+        console.log(index);
+
+        this.setState(() => ({ selectedPriceRange: this.state.priceRanges[index] }));
+
+
+
     }
 
     // Fixa filter grejjen. 
@@ -63,15 +81,19 @@ class SalongListComponent extends React.Component {
             <div>
                 <h1>Hår</h1>
                 <select
-                    value={this.state.lowestPrice - this.state.topPrice}
+                    value={this.state.selectedPriceRange.priceRange}
+                    onChange={this.onChangeHandler}
                     
                 
-                
-                ></select>
+                >
+                    {this.state.priceRanges.map((range, index) => {
+								return <option value={index} key={index}>{range.priceRange}</option>;
+							})}
+                </select>
 
                 {this.state.salongList.filter((salong) => {
 
-                    return salong.price <= this.state.topPrice && salong.price >= this.state.lowestPrice;
+                    return salong.price <= this.state.selectedPriceRange.topPrice && salong.price >= this.state.selectedPriceRange.lowPrice;
                 })
                       
                 .map((salong, index) => {
