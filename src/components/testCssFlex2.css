@@ -1,0 +1,178 @@
+
+
+
+
+
+body{
+    background: #FBFBFB
+}
+
+
+
+
+.wrapper{
+    margin:0;
+    padding:0;
+    display:flex;
+    
+    flex-direction: column;
+
+    
+}
+
+
+.image-item{
+    width: 375px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+
+}
+
+.background-image{
+    position:absolute;
+    z-index:0;
+    height:250px;
+    margin:-10px;
+}
+
+
+
+.image-item-first-box{
+    width:365px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    z-index:1;
+    justify-content: space-between;
+    
+    
+
+}
+
+
+.arrow-left{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    color: #b69f58;
+    border: solid 1px red;
+    
+}
+
+.heart {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border: solid 1px #ffffff;
+  
+  }
+
+
+
+
+.image-item-second-box{
+    width:360px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    z-index:1;
+    justify-content: flex-end;
+    padding-left: 15px;
+    padding-bottom: 30px;
+
+
+}
+
+
+.title{
+     
+    
+    width: 124px;
+    height: 31px;
+    font-family: MillerBanner;
+    font-size: 22px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.15px;
+    text-align: left;
+    color: #ffffff;
+
+}
+
+.rating{
+    height: 10px;
+    width: 140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px;
+
+
+}
+
+.rating-star{
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    border: solid 0.5px #b69f58;
+    background-color: #b69f58;
+    
+}
+
+
+
+.rating-text{
+    width: 21px;
+    height: 16px;
+    font-family: HelveticaNeue;
+    font-size: 13px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+.info-schema-item{
+
+}
+
+
+
+.address-item{}
+
+
+
+.time-item{}
+
+
+.phone-item{
+
+}
+
+
+.web-item{
+
+}
+
+
+.text-item{
+
+}
+

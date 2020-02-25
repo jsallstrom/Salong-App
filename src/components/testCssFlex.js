@@ -1,13 +1,25 @@
 import React from 'react';
-import './testCssGrid.css';
+import './testCssFlex.css';
 
 import arrow from '../img/arrow.png';
+import filter from '../img/filter.png';
+import star from '../img/star.png';
+import star_empty from '../img/star-empty.png';
 
+//  next up:
+// Make a Header
 
-
-const testCssGrid = () => (
+const testCssFlex = () => (
 
     <div className="wrapper">
+
+
+        <div className="header">
+            <img className="arrow-left" src={arrow}></img>
+            <div className="headline">Hår</div>
+            <img className="filter-img" src={filter}></img>
+        </div>
+
 
         <div className="item">
             <div className="box1">
@@ -15,7 +27,17 @@ const testCssGrid = () => (
             </div>
             <div className="box2">
                 <div className="title">Sax och Fön</div>
-                <div className="rating">Rating 4/5</div>
+
+                <div className="rating">
+                    <img className="star" src={star}></img>
+                    <img className="star" src={star}></img>
+                    <img className="star" src={star}></img>
+                    <img className="star" src={star}></img>
+                    <img className="star" src={star_empty}></img>
+                    <div className="rating-text">(32)</div>
+
+                </div>
+
                 <div className="address">Rådmansgatan 46</div>
                 
                 
@@ -26,7 +48,7 @@ const testCssGrid = () => (
 
             </div>
             <div className="box4">
-                <img className="arrow" src={arrow}></img>
+                <img className="arrow-right" src={arrow}></img>
             </div>
         </div>
 
@@ -62,7 +84,7 @@ const testCssGrid = () => (
 
             </div>
             <div className="box4">
-                <img className="arrow" src={arrow}></img>
+                <img className="arrow-right" src={arrow}></img>
             </div>
         </div>
 
@@ -84,7 +106,7 @@ const testCssGrid = () => (
 
             </div>
             <div className="box4">
-                <img className="arrow" src={arrow}></img>
+                <img className="arrow-right" src={arrow}></img>
             </div>
         </div>
 
@@ -106,7 +128,7 @@ const testCssGrid = () => (
 
             </div>
             <div className="box4">
-                <img className="arrow" src={arrow}></img>
+                <img className="arrow-right" src={arrow}></img>
             </div>
         </div>
 
@@ -128,7 +150,7 @@ const testCssGrid = () => (
 
             </div>
             <div className="box4">
-                <img className="arrow" src={arrow}></img>
+                <img className="arrow-right" src={arrow}></img>
             </div>
         </div>
         
@@ -144,4 +166,4 @@ const testCssGrid = () => (
 
 
 
-export default testCssGrid;
+export default testCssFlex;

@@ -1,92 +1,191 @@
 
 
-.container{
-    
 
 
+.item{
+  display: flex;
+  flex-direction: row;
+  width: 375px;
+  height: 106px;
+  border: solid 0.5px #eeeeee;
+  
+}
+
+
+.box1{
+  display: flex;
+  flex-direction: column;
+  
+  width: 85px;
+
+
+}
+
+
+.box2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  height: 106px;
+
+
+}
+
+.box3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  width: 100px;
+
+
+}
+
+
+.box4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40px;
+
+
+}
+
+
+
+
+/* Now for the text and stuff inside*/
+
+
+
+.time-text-1{
+  
+  width: 38px;
+  height: 17px;  
+  font-family: HelveticaNeue;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #202020;
 
 }
 
 
 .title{
-        width: 86px;
-        height: 29px;
-        font-family: MillerBanner;
-        font-size: 20px;
-        font-weight: 300;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        text-align: left;
-        color: #202020;
+   
+  
+  font-family: MillerBanner;
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #202020;
 
+}
+
+.rating{
+  height: 10px;
+  width: 140px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 0px;
+
+
+}
+
+.rating-star{
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+  border: solid 0.5px #b69f58;
+  background-color: #b69f58;
+  
+}
+
+
+
+.rating-text{
+  width: 18px;
+  height: 13px;
+  font-family: HelveticaNeue;
+  font-size: 11px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.07px;
+  text-align: right;
+  color: #656565;
+  padding-left: 5px;
+}
+
+
+
+
+.address{
+  
+  font-family: HelveticaNeue;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #666666;
 }
 
 
 .price{
+  
+  
+  width: 42px;
+  height: 17px;
+  font-family: HelveticaNeue;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #202020;
+}
 
-    width: 42px;
-    height: 17px;
-    font-family: HelveticaNeue;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: right;
-    color: #202020;
+.time-text-2{
   
-  }
+  width: 39px;
+  height: 16px;
+  font-family: HelveticaNeue;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #656565;
 
-
-  .time-text{
-    width: 38px;
-    height: 17px;
-  
-    font-family: HelveticaNeue;
-  
-    font-size: 15px;
-  
-    font-weight: normal;
-  
-    font-stretch: normal;
-  
-    font-style: normal;
-  
-    line-height: normal;
-  
-    letter-spacing: normal;
-  
-    text-align: left;
-  
-    color: #202020;
-  }
+}
 
 
-  .time-text-2{
-    width: 39px;
-
-    height: 16px;
-  
-    font-family: HelveticaNeue;
-  
-    font-size: 13px;
-  
-    font-weight: 300;
-  
-    font-stretch: normal;
-  
-    font-style: normal;
-  
-    line-height: normal;
-  
-    letter-spacing: normal;
-  
-    text-align: right;
-  
-    color: #656565;
 
 
-  }
+.arrow-right {
+
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  color: #b69f58;
+  transform: rotate(180deg);
+
+}

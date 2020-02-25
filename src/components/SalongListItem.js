@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom'
 
 import defaultPicture from '../img/image.jpg';
 
+import arrow from '../img/arrow.png';
+import filter from '../img/filter.png';
+import star from '../img/star.png';
+import star_empty from '../img/star-empty.png';
 
 // <img src={image}></img>
 
@@ -25,29 +29,46 @@ const SalongListItem = ({title = 'ExempelSalong', image = defaultPicture, rating
 
 
             
-            
+            <div className="wrapper">
 
 
-
-            <div className="container">
-                <div className="first-row">
-                    <span className="time-text">12:00</span>
-                    <span className="title">{title}</span>
-                    <span className="price">{price}</span>
-
+                <div className="header">
+                    <img className="arrow-left" src={arrow}></img>
+                    <div className="headline">Hår</div>
+                    <img className="filter-img" src={filter}></img>
                 </div>
 
-                <div className="second-row">
-                    <span className="rating">{rating}</span>
-                    <span className="time-text-2">30 min</span>
 
+                <div className="item">
+                    <div className="box1">
+                        <p className="time-text-1">12:00</p>
+                    </div>
+                    <div className="box2">
+                        <div className="title">Sax och Fön</div>
+
+                        <div className="rating">
+                            <img className="star" src={star}></img>
+                            <img className="star" src={star}></img>
+                            <img className="star" src={star}></img>
+                            <img className="star" src={star}></img>
+                            <img className="star" src={star_empty}></img>
+                            <div className="rating-text">(32)</div>
+
+                        </div>
+
+                        <div className="address">Rådmansgatan 46</div>
+                        
+                        
+                    </div>
+                    <div className="box3">
+                        <div className="price">320 kr</div>
+                        <div className="time-text-2">30 min</div>
+
+                    </div>
+                    <div className="box4">
+                        <img className="arrow-right" src={arrow}></img>
+                    </div>
                 </div>
-
-                <div className="third-row">
-                         {address}
-
-                </div>
-
 
             </div>
 

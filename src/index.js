@@ -5,14 +5,15 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-import TestCssGrid from './components/testCssGrid'
+import TestCssFlex from './components/testCssFlex'
 
+import TestCssFlex2 from './components/testCssFlex2'
 
 // Origin
 //  ReactDOM.render(<App />, document.getElementById('root'));
 
 
-ReactDOM.render(<TestCssGrid />, document.getElementById('root'));
+ReactDOM.render(<TestCssFlex2 />, document.getElementById('root'));
 
 
 

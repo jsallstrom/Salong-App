@@ -11,15 +11,53 @@
 
 */
 
-
-
-
-
-
 /* Background could maybe be changed to imported image */
 body{
     background: #FBFBFB
 }
+
+.header{
+    display: flex;
+    width: 375px;
+    height: 30px;
+    padding: 10px;
+    align-items: center;
+    border: solid 0.5px #b69f58;
+    
+    justify-content: space-between;
+}
+
+
+.arrow-left{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    color: #b69f58;
+}
+
+.headline{
+    width: 37px;
+    height: 31px;
+    font-family: MillerBanner;
+    font-size: 22px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.13px;
+    text-align: center;
+    color: #202020;
+}
+
+
+.filter-img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+
 
 .wrapper{
     margin:0;
@@ -121,18 +159,44 @@ body{
 }
 
 .rating{
-    
-    
-    font-family: HelveticaNeue;
+    height: 10px;
+    width: 140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px;
 
+
+}
+
+.rating-star{
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+    border: solid 0.5px #b69f58;
+    background-color: #b69f58;
+    
+}
+
+
+
+.rating-text{
+    width: 18px;
+    height: 13px;
+    font-family: HelveticaNeue;
     font-size: 11px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: -0.07px;
+    text-align: right;
     color: #656565;
+    padding-left: 5px;
 }
+
+
+
 
 .address{
     
@@ -183,7 +247,7 @@ body{
 
 
 
-.arrow {
+.arrow-right {
 
     width: 20px;
     height: 20px;
