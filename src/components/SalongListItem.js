@@ -8,7 +8,7 @@ import filter from '../img/filter.png';
 import star from '../img/star.png';
 import star_empty from '../img/star-empty.png';
 
-// <img src={image}></img>
+
 
 
 // ha en massa default värden här som används i listan när du destruerar
