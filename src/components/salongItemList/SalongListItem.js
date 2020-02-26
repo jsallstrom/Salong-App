@@ -18,9 +18,14 @@ import star_empty from '../../img/star-empty.png';
 
 
 // ha en massa default värden här som används i listan när du destruerar
-const SalongListItem = ({title = 'ExempelSalong', image = defaultPicture, rating = '4/5', address = 'Rådmansgatan 46', price = 320}) => (
+const SalongListItem = ({title = 'ExempelSalong', image = defaultPicture, rating = '4/5', 
+                        address = 'Rådmansgatan 46', price = 320, time = 30, 
+                        phone = "123-456 789 10", web = "www.example.se",
+                        infoText = "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet.",
+                        openTill = "18:00"
+                    }) => (
 
-    <div>
+    
         <Link to={{
             pathname: `/salong/${title}`,
             state: {
@@ -28,10 +33,15 @@ const SalongListItem = ({title = 'ExempelSalong', image = defaultPicture, rating
                 image: image,
                 rating: rating,
                 address: address,
-                price: price
+                price: price,
+                time: time, 
+                phone: phone, 
+                web: web,
+                infoText: infoText,
+                openTill: openTill
             
             }
-        }} style={{ textDecoration: 'none'}}>
+        }} style={{ textDecoration: 'none', width: '375px'}}>
             {/* ^This line takes away the underline */}
 
             
@@ -46,22 +56,22 @@ const SalongListItem = ({title = 'ExempelSalong', image = defaultPicture, rating
                         <div className="salong-name">{title}</div>
 
                         <div className="rating">
-                            <img className="star" src={star}></img>
-                            <img className="star" src={star}></img>
-                            <img className="star" src={star}></img>
-                            <img className="star" src={star}></img>
-                            <img className="star" src={star_empty}></img>
-                            <div className="rating-text">(32)</div>
+                            <img src={star}></img>
+                            <img src={star}></img>
+                            <img src={star}></img>
+                            <img src={star}></img>
+                            <img src={star_empty}></img>
+                            <div className="item-rating-text">(32)</div>
 
                         </div>
 
-                        <div className="address">Rådmansgatan 46</div>
+                    <div className="address">{address}</div>
                         
                         
                     </div>
                     <div className="box3">
                         <div className="price">{price} kr</div>
-                        <div className="time-text-2">30 min</div>
+                        <div className="time-text-2">{time} min</div>
 
                     </div>
                     <div className="box4">
@@ -77,7 +87,7 @@ const SalongListItem = ({title = 'ExempelSalong', image = defaultPicture, rating
 
 
         </Link>
-    </div>
+    
 
 
 );

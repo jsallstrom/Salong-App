@@ -9,7 +9,7 @@ body{
   flex-direction: row;
   width: 375px;
   height: 106px;
-  
+  border: solid 0.5px #eeeeee;
   
 }
 
@@ -115,7 +115,7 @@ body{
 
 
 
-.rating-text{
+.item-rating-text{
   width: 18px;
   height: 13px;
   font-family: HelveticaNeue;
@@ -191,3 +191,4 @@ body{
   transform: rotate(180deg);
 
 }
+

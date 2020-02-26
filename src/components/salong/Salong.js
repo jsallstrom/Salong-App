@@ -4,8 +4,8 @@ import './Salong.css';
 import defaultPicture from '../../img/image.jpg';
 
 import arrow_white from '../../img/arrow-white.png';
-import star from '../../img/star.png';
-import star_empty from '../../img/star-empty.png';
+import star from '../../img/star@2x.png';
+import star_empty from '../../img/star-empty@2x.png';
 import heart from '../../img/heart.png';
 
 import pin from '../../img/pin.png';
@@ -47,11 +47,11 @@ class Salong extends React.Component {
                 <div className="image-item-second-box">
                     <div className="salong-title">{this.props.location.state.title}</div>
                     <div className="salong-rating">
-                        <img className="star" src={star}></img>
-                        <img className="star" src={star}></img>
-                        <img className="star" src={star}></img>
-                        <img className="star" src={star}></img>
-                        <img className="star" src={star_empty}></img>
+                        <img src={star}></img>
+                        <img src={star}></img>
+                        <img src={star}></img>
+                        <img src={star}></img>
+                        <img src={star_empty}></img>
                         <div className="rating-text">(32)</div>
 
                     </div>
@@ -77,29 +77,28 @@ class Salong extends React.Component {
                 <div className="bottom-rectangle-item">
                     <img className="time-clock" src={clock}></img>
                     
-                    <div className="time-text">Öppet till 19:00 idag</div>
+                    <div className="time-text">Öppet till {this.props.location.state.openTill} idag</div>
                     <img className="arrow-down" src={arrow}></img>
 
                 </div>
 
                 <div className="bottom-rectangle-item">
                     <img className="phone-symbol" src={phone}></img>
-                    <div className="phone-text">08-522 389 20</div>
+                    <div className="phone-text">{this.props.location.state.phone}</div>
                     
                 </div>
                 
                 <div className="bottom-rectangle-item">
                     <img className="web-symbol" src={globe}></img>
-                    <div className="web-text">www.salongweb.se</div>
+                    <div className="web-text">{this.props.location.state.web}</div>
                     
                 </div>
 
                 <div className="bottom-rectangle-item">
                     <div className="info-text">
-                        Lorem ipsum dolor sit amet, vulputate nunc. 
-                        Auctor viverra. Ridiculus feugiat nunc porttitor
-                        volut pat, acu quis torquent iaculis ultricies
-                        massa, duis nun quis que amet.
+
+                    {this.props.location.state.infoText}
+                       
 
                     </div>
                 

@@ -1,6 +1,7 @@
 import React from 'react';
 
 
+
 import SalongListItem from '../salongItemList/SalongListItem';
 
 import './SalongListComponent.css';
@@ -10,53 +11,13 @@ import arrow from '../../img/arrow.png';
 import filter from '../../img/filter.png';
 
 
+import salonger from '../data/salonger'
+
+
 class SalongListComponent extends React.Component {
 
     state = {
-        salongList : [{
-            title: 'Salong 1',
-            price: 100,
-          },
-          {
-           
-            title: 'Salong 2',
-            price: 200,
-          },
-          {
-           
-            title: 'Salong 3',
-            price: 300,
-          },
-          {
-           
-            title: 'Salong 4',
-            price: 400,
-          },
-          {
-           
-            title: 'Salong 5',
-            price: 500,
-          },
-          {
-           
-            title: 'Salong 6',
-            price: 600,
-          },
-          {
-           
-            title: 'Salong 7',
-            price: 750,
-          },
-          {
-           
-            title: 'Salong 8',
-            price: 800,
-          },
-          {
-           
-            title: 'Salong 9',
-            price: 950,
-          }], 
+        salongList : [], 
      
 
         priceRanges : [{priceRange: 'Pris 0 - 250 kr', lowPrice: 0, topPrice: 250},
@@ -69,9 +30,26 @@ class SalongListComponent extends React.Component {
        selectedLowPrice: 0,
        selectedTopPrice: 250
 
-        // when filtering if topPrice is undefined then all are shown
 
     }
+
+
+
+    // TODO:
+    /*
+        
+        
+        3) Add some variations to Items
+        4) Send in
+
+    */
+
+    componentDidMount(){
+        
+        this.setState(() => ({ salongList: salonger }));
+
+    }
+    
 
 
 
@@ -104,34 +82,32 @@ class SalongListComponent extends React.Component {
                         <div className="headline">Hår</div>
                         <img className="filter-img" src={filter}></img>
                     </div>
-                <select
-                    value={this.state.selectedPriceRange}
-                    onChange={(e) => {
 
 
-                        
-
-
-                        const newPriceRange = e.target.value;
-                        const split = newPriceRange.split(",");
-
-                        const newLowPrice = Number(split[0]);
-                        const newTopPrice = Number(split[1]);
-                        
-                        
-                        this.setState(() => ({ selectedLowPrice: newLowPrice }));
-                        this.setState(() => ({ selectedTopPrice: newTopPrice }));
-                        
-                        this.setState(() => ({ selectedPriceRange: newPriceRange }));
-
-                    }}
                     
-                
-                >
-                    {this.state.priceRanges.map((range, index) => {
-								return <option key={index} value={[range.lowPrice,range.topPrice]}>{range.priceRange}</option>;
-							})}
-                </select>
+                        <select
+                            value={this.state.selectedPriceRange}
+                            className="dropdown"
+                            onChange={(e) => {
+                                const newPriceRange = e.target.value;
+                                const split = newPriceRange.split(",");
+
+                                const newLowPrice = Number(split[0]);
+                                const newTopPrice = Number(split[1]);
+                                
+                                
+                                this.setState(() => ({ selectedLowPrice: newLowPrice }));
+                                this.setState(() => ({ selectedTopPrice: newTopPrice }));
+                                
+                                this.setState(() => ({ selectedPriceRange: newPriceRange }));
+
+                            }}>
+                        
+                            {this.state.priceRanges.map((range, index) => {
+                                        return <option key={index} value={[range.lowPrice,range.topPrice]}>{range.priceRange}</option>;
+                                    })}
+                        </select>
+                     
 
                 {this.state.salongList.filter((salong) => {
 
