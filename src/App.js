@@ -1,7 +1,7 @@
 import React from 'react';
 
-import SalongListComponent from './components/SalongListComponent';
-import Salong from './components/Salong'
+import SalongListComponent from './components/salongListComponent/SalongListComponent';
+import Salong from './components/salong/Salong'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 

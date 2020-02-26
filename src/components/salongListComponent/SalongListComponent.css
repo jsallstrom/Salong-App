@@ -1,0 +1,60 @@
+
+
+.wrapper{
+    margin:0;
+    padding:0;
+    display:flex;
+    
+    
+    flex-wrap:wrap;
+
+    
+}
+
+select{
+    width: 375px;
+
+    height: 50px;
+  
+    background-color: #ffffff;
+}
+
+.header{
+    display: flex;
+    width: 375px;
+    height: 30px;
+    padding: 10px;
+    align-items: center;
+    border: solid 0.5px #b69f58;
+    
+    justify-content: space-between;
+}
+
+
+.arrow-left{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    color: #b69f58;
+}
+
+.headline{
+    width: 37px;
+    height: 31px;
+    font-family: MillerBanner;
+    font-size: 22px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.13px;
+    text-align: center;
+    color: #202020;
+}
+
+
+.filter-img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}

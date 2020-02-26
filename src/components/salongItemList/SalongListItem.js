@@ -1,12 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-import defaultPicture from '../img/image.jpg';
 
-import arrow from '../img/arrow.png';
-import filter from '../img/filter.png';
-import star from '../img/star.png';
-import star_empty from '../img/star-empty.png';
+import './SalongListItem.css';
+
+import defaultPicture from '../../img/image.jpg';
+
+import arrow from '../../img/arrow.png';
+
+import star from '../../img/star.png';
+import star_empty from '../../img/star-empty.png';
+
+
+
 
 
 
@@ -25,18 +31,11 @@ const SalongListItem = ({title = 'ExempelSalong', image = defaultPicture, rating
                 price: price
             
             }
-        }}>
-
+        }} style={{ textDecoration: 'none'}}>
+            {/* ^This line takes away the underline */}
 
             
-            <div className="wrapper">
-
-
-                <div className="header">
-                    <img className="arrow-left" src={arrow}></img>
-                    <div className="headline">Hår</div>
-                    <img className="filter-img" src={filter}></img>
-                </div>
+            
 
 
                 <div className="item">
@@ -44,7 +43,7 @@ const SalongListItem = ({title = 'ExempelSalong', image = defaultPicture, rating
                         <p className="time-text-1">12:00</p>
                     </div>
                     <div className="box2">
-                        <div className="title">Sax och Fön</div>
+                        <div className="salong-name">{title}</div>
 
                         <div className="rating">
                             <img className="star" src={star}></img>
@@ -61,7 +60,7 @@ const SalongListItem = ({title = 'ExempelSalong', image = defaultPicture, rating
                         
                     </div>
                     <div className="box3">
-                        <div className="price">320 kr</div>
+                        <div className="price">{price} kr</div>
                         <div className="time-text-2">30 min</div>
 
                     </div>
@@ -70,8 +69,7 @@ const SalongListItem = ({title = 'ExempelSalong', image = defaultPicture, rating
                     </div>
                 </div>
 
-            </div>
-
+           
             
             
 

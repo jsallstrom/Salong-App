@@ -1,13 +1,15 @@
 
 
-
+body{
+  background: #f9f9f9
+}
 
 .item{
   display: flex;
   flex-direction: row;
   width: 375px;
   height: 106px;
-  border: solid 0.5px #eeeeee;
+  
   
 }
 
@@ -76,7 +78,7 @@
 }
 
 
-.title{
+.salong-name{
    
   
   font-family: MillerBanner;

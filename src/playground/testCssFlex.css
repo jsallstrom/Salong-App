@@ -1,17 +1,11 @@
 
 
 
-/*
-    
-    Quick guide for Flex box,
-
-    only do flexbox on the boxes and containers you are gonna use, you dont
-    need to use it on text and stuff
 
 
-*/
 
-/* Background could maybe be changed to imported image */
+
+
 body{
     background: #FBFBFB
 }
@@ -122,7 +116,7 @@ body{
 
 
 
-/* Now for the text and stuff inside*/
+
 
 
 
@@ -154,7 +148,11 @@ body{
     line-height: normal;
     letter-spacing: normal;
     text-align: left;
-    color: #202020;
+    
+    text-emphasis-color: black;
+    background-color: blue;
+    
+    
 
 }
 
@@ -256,3 +254,4 @@ body{
     transform: rotate(180deg);
   
   }
+

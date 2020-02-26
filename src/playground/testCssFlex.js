@@ -26,7 +26,7 @@ const testCssFlex = () => (
                 <p className="time-text-1">12:00</p>
             </div>
             <div className="box2">
-                <div className="title">Sax och Fön</div>
+                <div className="title">Hårsalong 1</div>
 
                 <div className="rating">
                     <img className="star" src={star}></img>
