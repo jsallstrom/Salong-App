@@ -5,15 +5,12 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-import TestCssFlex from './playground/testCssFlex'
 
-import TestCssFlex2 from './playground/testCssFlex2'
 
-// Origin
 ReactDOM.render(<App />, document.getElementById('root'));
 
 
-// ReactDOM.render(<TestCssFlex />, document.getElementById('root'));
+
 
 
 

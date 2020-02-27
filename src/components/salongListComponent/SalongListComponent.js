@@ -88,6 +88,7 @@ class SalongListComponent extends React.Component {
                         <select
                             value={this.state.selectedPriceRange}
                             className="dropdown"
+                            property="voucherCategoryClass"
                             onChange={(e) => {
                                 const newPriceRange = e.target.value;
                                 const split = newPriceRange.split(",");
